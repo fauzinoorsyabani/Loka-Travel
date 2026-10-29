@@ -1,0 +1,46 @@
+{
+  "name": "loka-travel-react",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "canvas-confetti": "^1.9.4",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.11.17",
+    "lucide-react": "^0.454.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^2.5.4"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.3",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.14",
+    "vite": "^5.4.10"
+  },
+  "description": "[![Published Paper](https://img.shields.io/badge/Journal-IJAISI%20Nov%202025-0d9488?style=for-the-badge)](./Travel%20Package%20Recommendation%20System%20Using%20Collaborative%20Filtering%20Method%20at%20Loka%20Travel.pdf) [![CF Accuracy](https://img.shields.io/badge/CF%20Accuracy-80.63%25%20(MAE%200.9689)-10b981?style=for-the-badge)](#published-research--mathematical-formulation) [![CBF Relevance](https://img.shields.io/badge/CBF%20Relevance-0.884%20(797%20Hotels)-f59e0b?style=for-the-badge)](#system-architecture) [![Tests](https://img.shields.io/badge/Tests-5%2F5%20Passing-3b82f6?style=for-the-badge)](./tests/test_recommender.py)",
+  "main": "postcss.config.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FauziNs/prototype_03.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FauziNs/prototype_03/issues"
+  },
+  "homepage": "https://github.com/FauziNs/prototype_03#readme"
+}

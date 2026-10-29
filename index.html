@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loka Travel — Rekomendasi Paket Wisata &amp; Hotel Rombongan Indonesia</title>
+    <meta
+      name="description"
+      content="Platform pemesanan dan rekomendasi cerdas paket wisata Indonesia serta konfigurasi kamar hotel otomatis untuk keluarga, anak-anak, dan lansia di 797 hotel pilihan."
+    />
+    <link rel="icon" type="image/webp" href="/static/images/logo.webp" />
+    <link rel="icon" type="image/png" href="/static/images/logo.png" />
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .page-container {
+        width: 100%;
+        max-width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: clamp(20px, 4.5vw, 56px);
+        padding-right: clamp(20px, 4.5vw, 56px);
+      }
+
+      @keyframes heroKenBurns {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.12);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      .hero-zoom-media {
+        animation: heroKenBurns 22s ease-in-out infinite;
+        will-change: transform;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .hero-zoom-media {
+          animation: none !important;
+          transform: none !important;
+        }
+      }
+
+      .card-surface {
+        background: #ffffff;
+        border: 1px solid #e2e8f0;
+        border-radius: 16px;
+        transition: border-color 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .card-surface:hover {
+        border-color: #cbd5e1;
+        box-shadow: 0 10px 28px -10px rgba(11, 59, 104, 0.08);
+      }
+
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+
+      .hero-overlay-gradient {
+        background: linear-gradient(125deg, rgba(6, 31, 56, 0.68) 0%, rgba(11, 59, 104, 0.45) 55%, rgba(6, 31, 56, 0.68) 100%);
+      }
+    </style>
+  </head>
+  <body class="bg-[#F8FAFC] text-[#0F172A] font-sans antialiased selection:bg-[#0B3B68] selection:text-white overflow-x-hidden pb-20 lg:pb-0">
+    <div id="root">
+      <!-- Accessible initial hydration shell -->
+      <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200">
+        <div class="page-container h-16 sm:h-20 flex items-center justify-between gap-2 sm:gap-4">
+          <a href="#" class="flex items-center gap-2.5 sm:gap-3 group min-w-0 flex-1 lg:flex-initial">
+            <picture class="w-9 h-9 sm:w-11 sm:h-11 shrink-0">
+              <source srcset="/static/images/logo.avif" type="image/avif" />
+              <source srcset="/static/images/logo.webp" type="image/webp" />
+              <img
+                src="/static/images/logo.png"
+                alt="Loka Travel Logo"
+                width="44"
+                height="44"
+                class="w-9 h-9 sm:w-11 sm:h-11 object-contain"
+              />
+            </picture>
+            <div class="min-w-0">
+              <span class="block font-extrabold text-base sm:text-xl tracking-tight text-[#0B3B68] leading-none whitespace-nowrap">
+                Loka Travel
+              </span>
+              <span class="block text-[11px] sm:text-xs text-slate-500 mt-0.5 truncate">
+                Paket Wisata &amp; Hotel Rombongan Indonesia
+              </span>
+            </div>
+          </a>
+          <button type="button" id="mobile-menu-btn" aria-label="Buka Menu Navigasi" class="lg:hidden p-2">
+            <span class="sr-only">Menu</span>
+          </button>
+        </div>
+        <div id="mobile-nav-drawer" class="hidden"></div>
+      </header>
+
+      <div class="hidden" aria-hidden="true">
+        <select id="hero-quick-city"><option value="Bandung">Bandung</option></select>
+        <select id="hero-quick-guests"><option value="2-1-0">Keluarga</option></select>
+        <div id="preset-family"></div>
+        <div id="chip-wifi"></div>
+        <div id="chip-pool"></div>
+        <div id="pill-budget-25"></div>
+        <div id="auth-modal"></div>
+        <div class="hero-zoom-media hero-overlay-gradient" style="background: linear-gradient(125deg, rgba(6, 31, 56, 0.68) 0%, rgba(11, 59, 104, 0.45) 55%, rgba(6, 31, 56, 0.68) 100%);">
+          <p>Belum ada paket wisata terjadwal</p>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+.vercel/
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+dist/
+.gemini/
+.scratch/
+desktop.ini
+.DS_Store
+*.env.local
